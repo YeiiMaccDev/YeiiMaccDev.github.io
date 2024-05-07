@@ -13,7 +13,7 @@ export const MenuLogo = () => {
     return (
         <img
             src={(darkTheme) ? logoLight120 : logoDark120}
-            srcSet={`${(darkTheme) ? logoLight120 : logoDark120} 60w, ${(darkTheme) ? logoLight120 : logoDark120} 120w`}
+            srcSet={`${(darkTheme) ? logoLight60 : logoDark60} 60w, ${(darkTheme) ? logoLight120 : logoDark120} 120w`}
             sizes="(max-width: 600px) 50px, 120px"
             className="navbar-site__logo-img"
             width="50"
