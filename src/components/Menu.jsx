@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 
 import './Menu.css'
-import logoDark60 from '../assets/img/logoDark60.png'
-import logoDark120 from '../assets/img/logoDark120.png'
+import { Theme } from './Theme';
+import { MenuLogo } from './MenuLogo';
 
 export const Menu = () => {
+    console.log("Menu")
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -41,12 +42,7 @@ export const Menu = () => {
         <div className="navbar-site">
             <nav className="navbar-site__navbar">
                 <a href="#home" className="navbar-site__logo">
-                    <img src={logoDark120} srcSet={`${logoDark60} 60w, ${logoDark120} 120w`}
-                        sizes="(max-width: 600px) 50px, 120px"
-                        className="navbar-site__logo-img"
-                        width="50"
-                        height="50"
-                        alt="Logo YeiiMaccDev" />
+                    <MenuLogo />
                     <strong className="navbar-site__logo-strong">YeiiMaccDev</strong>
                 </a>
                 <ul className={`navbar-site__list ${(isMenuOpen) ? 'open' : ''} `}>
@@ -67,6 +63,9 @@ export const Menu = () => {
                     </li>
                     <li className="navbar-site__item">
                         <a className="navbar-site__link" href="#contacto">Contacto</a>
+                    </li>
+                    <li className="navbar-site__item">
+                        <Theme />
                     </li>
 
                 </ul>

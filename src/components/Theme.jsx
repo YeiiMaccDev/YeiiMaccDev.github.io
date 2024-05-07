@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Theme.css'
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
-import { useEffect } from 'react';
 import { useThemeContext } from '../context/ThemeProvider';
 
 export const Theme = () => {

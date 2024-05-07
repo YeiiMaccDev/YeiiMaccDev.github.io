@@ -3,6 +3,7 @@ import { ThemeContext } from "./ThemeContex";
 
 
 export const ThemeProvider = ({ children }) => {
+    console.log("ThemeProvider")
     const isDarkOrLight = (theme) => theme ? "dark" : "light";
 
     // Theme used by the system to define an initial theme, select light or dark favicon as appropriate.
@@ -17,7 +18,6 @@ export const ThemeProvider = ({ children }) => {
     // Update page theme
     const setTheme = () => {
         document.getElementById("body").setAttribute("data-theme", isDarkOrLight(darkTheme));
-        console.log({ darkTheme })
         localStorage.setItem("selectedTheme", isDarkOrLight(darkTheme));
     }
 
@@ -37,7 +37,7 @@ export const ThemeProvider = ({ children }) => {
     useEffect(() => {
         setTheme();
     }, [darkTheme])
-    
+
 
     // Change the theme of the page according to the theme change of the system.
     useEffect(() => {

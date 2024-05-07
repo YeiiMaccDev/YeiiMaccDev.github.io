@@ -6,7 +6,6 @@ export const App = () => {
   return (
     <>
       <Header />
-      <Theme />
       <section style={{ minHeight: '100vh' }} id="Home"> inicio </section>
       <section style={{ minHeight: '100vh' }} id="sobre-mi"> sobre-mi </section>
       <section style={{ minHeight: '100vh' }} id="tecnologias"> tecnologias </section>

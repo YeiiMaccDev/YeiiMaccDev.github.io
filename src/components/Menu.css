@@ -6,8 +6,8 @@
     position: fixed;
     top: 0;
     z-index: 10020;
-    background: #fff;
-    color: #000;
+    background: var(--bg-menu);
+    color: var(--font-color-menu);
 }
 
 /* nav */
@@ -27,7 +27,7 @@
     font-size: 1.2rem;
     font-weight: 800;
     text-decoration: none;
-    color: #000;
+    color: var(--font-color-menu);
 }
 
 .navbar-site__logo-img {
@@ -42,6 +42,7 @@
 .navbar-site__login-strong {
     display: none;
 }
+
 /*  logo end */
 
 .navbar-site__list {
@@ -55,11 +56,11 @@
 
 .navbar-site__item {
     /* transition: var(--transition); */
-    color: black;
+    color: var(--font-color-menu);
 }
 
 .navbar-site__link {
-    color: #000;
+    color: inherit;
     padding: 15px;
     display: block;
     text-decoration: none;
@@ -70,7 +71,7 @@
 }
 
 .navbar-site__link:hover {
-    color: var(--text-color-strong);
+    color: var(--font-color-menu-hover);
     cursor: pointer;
 }
 
@@ -101,9 +102,9 @@
 .navbar-site__toggler__span:after {
     width: 30px;
     height: 3px;
-    background-color: #000;
+    background-color: var(--font-color-menu);
     display: block;
-    transition: .3s;
+    /* transition: var(--transition); */
 }
 
 .navbar-site__toggler__span:before {
@@ -151,23 +152,23 @@
         bottom: 0;
         flex-direction: column;
         align-items: center;
-        color: #000;
+        color: var(--font-color-menu);
         max-height: 0;
         overflow: hidden;
-        transition: .8s;
-        background: #fff;
+        /* transition: var(--transition); */
+        background: var(--bg-menu);
     }
 
     .navbar-site__list::-webkit-scrollbar {
         width: 6px;
         height: 6px;
     }
-    
+
     .navbar-site__list::-webkit-scrollbar-thumb {
         background-color: var(--primary-color);
         border-radius: 3px;
     }
-    
+
     .navbar-site__list::-webkit-scrollbar-track {
         background-color: #dddddd;
     }
@@ -186,6 +187,7 @@
         overflow: visible;
         overflow-y: auto;
     }
+
     /* navbar mobile end */
 
     .navbar-site__login-strong {
