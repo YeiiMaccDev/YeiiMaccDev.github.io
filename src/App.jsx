@@ -1,3 +1,4 @@
+import { FaviconPage } from "./components/FaviconPage"
 import { Header } from "./components/Header"
 import { Theme } from "./components/Theme"
 
@@ -5,6 +6,7 @@ export const App = () => {
   console.log("App")
   return (
     <>
+      <FaviconPage />
       <Header />
       <section style={{ minHeight: '100vh' }} id="Home"> inicio </section>
       <section style={{ minHeight: '100vh' }} id="sobre-mi"> sobre-mi </section>

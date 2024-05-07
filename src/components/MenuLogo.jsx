@@ -1,6 +1,5 @@
 import { useThemeContext } from "../context/ThemeProvider"
 
-
 import logoDark60 from '../assets/img/logoDark60.png'
 import logoDark120 from '../assets/img/logoDark120.png'
 import logoLight60 from '../assets/img/logoLight60.png'
