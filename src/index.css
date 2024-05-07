@@ -1,2 +1,25 @@
+:root {
+  --primary-color: #00AAA9;
+  --secondary-color: #302ae6;
+  --font-color: #302ae6;
+  --bg-primary-color: #fff;
+  --bg-gradient-primary: radial-gradient(circle, #f1ede4, #00aaa9, #00aaa9, #00aaa9, #00aaa9);
+  --transition: all .8s ease-in-out;
+}
 
+[data-theme="dark"] {
+  --primary-color: #00AAA9;
+  --secondary-color: #302ae6;
+  --font-color: #302ae6;
+  --bg-primary-color: #000000;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: var(--bg-primary-color);
+}
