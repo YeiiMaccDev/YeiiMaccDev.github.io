@@ -1,9 +1,9 @@
-import React from 'react'
 import { Menu } from './Menu'
+import './Header.css'
 
 export const Header = () => {
     return (
-        <header>
+        <header className='header'>
             <Menu />
         </header>
     )

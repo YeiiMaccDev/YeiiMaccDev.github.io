@@ -47,10 +47,10 @@ export const Menu = () => {
                 </a>
                 <ul className={`navbar-site__list ${(isMenuOpen) ? 'open' : ''} `}>
                     <li className="navbar-site__item">
-                        <a className="navbar-site__link navbar-site__active" href="#home">Inicio</a>
+                        <a className="navbar-site__link navbar-site__active" href="#about">Inicio</a>
                     </li>
                     <li className="navbar-site__item">
-                        <a className="navbar-site__link" href="#sobre-mi">Sobre mi</a>
+                        <a className="navbar-site__link" href="#aboutme">Sobre mi</a>
                     </li>
                     <li className="navbar-site__item">
                         <a className="navbar-site__link" href="#tecnologias">Tecnologías</a>

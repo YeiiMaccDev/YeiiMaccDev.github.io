@@ -1,0 +1,188 @@
+/* Abuot Section */
+.about {
+  background: var(--bg-light);
+  flex-direction: column;
+  padding-top: 1rem !important;
+}
+
+.about__data {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  gap: 2rem;
+  align-items: center;
+  color: var(--font-color);
+}
+
+/* .about__card {
+    padding: 1rem;
+  } */
+
+.about__title {
+  padding: 10px 0;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3rem;
+}
+
+.about__title2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: var(--primary-color);
+}
+
+.about__description {
+  padding: 10px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.about__avatar {
+  width: 300px;
+  height: auto;
+  aspect-ratio: 1/1.5;
+  margin: auto;
+  box-shadow: var(--box-shadow-profile);
+  transition: var(--transition);
+}
+
+.about__img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.about__networks {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about__icons-link {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  gap: 5px;
+  text-decoration: none;
+  color: var(--font-color);
+  transition: var(--transition);
+}
+
+
+.arrow-down {
+  /* position: absolute; */
+  left: 50%;
+  bottom: 5px;
+  animation: 3s float-arrow-down infinite;
+  transition: var(--transition);
+}
+
+@keyframes float-arrow-down {
+  0% {
+    transform: translateY(35px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(35px);
+  }
+}
+
+/* Hover */
+.about__avatar:hover {
+  box-shadow: var(--box-shadow-profile-hover);
+}
+
+.about__linkedin:hover {
+  color: #0e76a8;
+}
+
+.about__github:hover {
+  color: #383838;
+}
+
+.about__youtube:hover {
+  color: #c4302b;
+}
+
+.about__cv:hover {
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 1000px) {
+  .about__data {
+    grid-template-columns: auto minmax(320px, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .about__data {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .about__avatar {
+    grid-row: 1;
+    padding: 0;
+  }
+
+  .about__card {
+    grid-row: 2;
+    padding: 4px;
+  }
+
+
+  .about__title {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  .about__title2 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  .about__description {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .about__card {
+    text-align: center;
+  }
+
+  .about__icons__name {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about__avatar {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about__avatar {
+    width: 250px;
+  }
+}
+
+/* Abuot Section */
