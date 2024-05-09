@@ -1,0 +1,78 @@
+/*Start Sobre mi */
+.academic-description {
+    background: var(--bg-primary-color);
+}
+
+.academic-description__data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    align-items: center;
+}
+
+.academic-description__card {
+    color: var(--font-color);
+    padding: 1rem;
+
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+}
+
+.academic-description__item {
+    display: flex;
+    flex-direction: row;
+
+    padding: 10px;
+    margin-bottom: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.academic-description__item-image {
+    display: flex;
+    align-items: center;
+}
+
+.academic-description__item-image img {
+    background-color: white;
+}
+
+.academic-description_item-description {
+    padding: 5px;
+    padding-left: 10px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .academic-description__data {
+        grid-template-columns: inmax(320px, 1fr) auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .academic-description__data {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .academic-description__card {
+        padding: 4px;
+    }
+
+    .academic-description__avatar {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .academic-description__avatar {
+        width: 250px;
+    }
+}
+
+
+/*End Sobre mi */

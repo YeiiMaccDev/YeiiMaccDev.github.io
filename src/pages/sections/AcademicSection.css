@@ -1,0 +1,248 @@
+.academic {
+    background: var(--bg-light);
+    background-image: var(--bg-gradient-primary);
+    color: #000;
+}
+
+.academic__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.academic__title {
+    padding: 1rem 0;
+    color: var(--font-color);
+}
+
+.academic__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+.academic__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.academic__img {
+    max-width: 350px;
+    max-height: 275px;
+    width: 100%;
+    height: auto;
+}
+
+.academic__descripcion {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.academic__circulo,
+.academic__circulom2 {
+    position: absolute;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.356);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    transition: var(--transition);
+}
+
+.academic__circulo {
+    border-radius: 50%;
+}
+
+.academic__circulom2 {
+    border-radius: 20px 5px;
+}
+
+
+
+.academic__circulo-alura {
+    width: 80px;
+    height: 80px;
+    top: -15px;
+    left: -35px;
+    z-index: -1;
+
+    animation: 6s flotar infinite;
+}
+
+.academic__circulo-aluraTop {
+    width: 70px;
+    height: 70px;
+    top: -115px;
+    right: 20px;
+    z-index: -1;
+
+    animation: 10s flotar infinite;
+}
+
+.academic__circulo-aluraBottom {
+    width: 50px;
+    height: 50px;
+    bottom: -65px;
+    left: 40px;
+    z-index: -1;
+
+    animation: 8s flotar infinite;
+}
+
+
+
+
+.academic__circulo-misiontic {
+    width: 160px;
+    height: 160px;
+    top: 35px;
+    z-index: -1;
+
+    animation: 8s flotar infinite;
+}
+
+
+
+.academic__circulo-sena {
+    width: 80px;
+    height: 80px;
+    right: -35px;
+    bottom: -15px;
+    z-index: -1;
+
+    animation: 6s flotar infinite;
+}
+
+
+.academic__circulo-senaTop {
+    width: 50px;
+    height: 50px;
+    top: -65px;
+    right: 40px;
+    z-index: -1;
+
+    animation: 8s flotar infinite;
+}
+
+.academic__circulo-senaBottom {
+    width: 70px;
+    height: 70px;
+    bottom: -115px;
+    left: 20px;
+    z-index: -1;
+
+    animation: 10s flotar infinite;
+}
+
+.academic__actual {
+    animation: 2s escalaActual infinite;
+}
+
+@media screen and (max-width: 768px) {
+
+    .academic__data {
+        padding: 75px 0;
+    }
+
+    .academic__list {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .academic__card {
+        flex-direction: row;
+    }
+
+    .academic__img {
+        max-width: 300px;
+        max-height: 225px;
+        width: 100%;
+        height: auto;
+    }
+
+    .academic__descripcion {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .academic__card {
+        flex-direction: column;
+    }
+
+    .academic__img {
+        max-width: 230px;
+        max-height: 225px;
+        width: 100%;
+        height: auto;
+    }
+
+    .academic__descripcion {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .academic__circulo-alura {
+        width: 70px;
+        height: 70px;
+        left: -15px;
+    }
+
+    .academic__circulo-sena {
+        width: 70px;
+        height: 70px;
+        right: -15px;
+    }
+
+}
+
+
+@keyframes flotar {
+    0% {
+        transform: translateY(5px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes escalaActual {
+    0% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}

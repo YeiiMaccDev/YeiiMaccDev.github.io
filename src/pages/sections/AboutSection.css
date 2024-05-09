@@ -32,6 +32,7 @@
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 2rem;
+  padding: 10px;
   color: var(--primary-color);
 }
 

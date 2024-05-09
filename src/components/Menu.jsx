@@ -53,13 +53,13 @@ export const Menu = () => {
                         <a className="navbar-site__link" href="#aboutme">Sobre mi</a>
                     </li>
                     <li className="navbar-site__item">
-                        <a className="navbar-site__link" href="#tecnologias">Tecnologías</a>
+                        <a className="navbar-site__link" href="#tecnologies">Tecnologías</a>
                     </li>
                     <li className="navbar-site__item">
                         <a className="navbar-site__link" href="#proyectos">Proyectos</a>
                     </li>
                     <li className="navbar-site__item">
-                        <a className="navbar-site__link" href="#formacion">Formación</a>
+                        <a className="navbar-site__link" href="#academic">Formación</a>
                     </li>
                     <li className="navbar-site__item">
                         <a className="navbar-site__link" href="#contacto">Contacto</a>
