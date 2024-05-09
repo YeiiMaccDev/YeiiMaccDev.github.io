@@ -3,6 +3,7 @@ import { AboutMeSection } from "./sections/AboutMeSection"
 import { AboutSection } from "./sections/AboutSection"
 import { AcademicDescriptionSection } from "./sections/AcademicDescriptionSection"
 import { AcademicSection } from "./sections/AcademicSection"
+import { ContactSection } from "./sections/ContactSection"
 import { TecnologiesSection } from "./sections/TecnologiesSection"
 
 export const HomePage = () => {
@@ -15,8 +16,7 @@ export const HomePage = () => {
             <section style={{ minHeight: '100vh' }} id="proyectos"> proyectos </section>
             <AcademicSection />
             <AcademicDescriptionSection />
-            <section style={{ minHeight: '100vh' }} id="formacion"> formacion</section>
-            <section style={{ minHeight: '100vh' }} id="contacto"> contacto</section>
+            <ContactSection />
         </>
     )
 }

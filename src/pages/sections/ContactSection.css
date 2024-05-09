@@ -1,0 +1,108 @@
+.contact {
+    background: var(--bg-light);
+    color: var(--font-color);
+}
+
+
+.contact__title::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: var(--color-primary);
+    margin: 4px 10px;
+}
+
+
+.contact__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+.contact__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    padding: 1rem;
+
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 12px 0 rgba(31, 38, 135, 0.17);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: var(--transition);
+}
+
+.contact__networks {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.contact__icons-link {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.contact__icons-link:hover {
+    color: var(--primary-color);
+}
+
+.contact__whatsapp {
+    display: none;
+    transition: var(--transition);
+}
+
+.contact__email-text,
+.contact__whatsapp-text {
+    transition: var(--transition);
+}
+
+.contact__email-text:hover {
+    color: var(--color-primary);
+}
+
+.contact__whatsapp-text:hover {
+    color: #25D366;
+}
+
+
+.contact__cardBtn {
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    padding: 1rem;
+
+}
+
+.contact__btnWhatsapp {
+    color: var(--font-color) !important;
+    border: 1px solid var(--primary-color) !important;
+    transition: all 1s ease;
+}
+
+.contact__btnWhatsapp:hover {
+    border-radius: 50px 5px;
+}
+
+@media screen and (max-width: 900px) {
+    .contact__lista {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .contact__icons-link {
+        flex-direction: column;
+    }
+}
