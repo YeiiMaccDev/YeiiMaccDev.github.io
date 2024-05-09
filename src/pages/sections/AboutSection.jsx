@@ -7,7 +7,7 @@ import './AboutSection.css'
 
 export const AboutSection = () => {
     return (
-        <section className="about section-100vh" id="about">
+        <section className="about section-100vh menu-section" id="about">
             <div className="about__data container">
                 <div className="about__card">
                     <h1 className="about__title"> Yeison Macias </h1>

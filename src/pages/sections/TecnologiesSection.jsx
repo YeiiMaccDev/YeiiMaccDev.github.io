@@ -5,7 +5,7 @@ import { faBootstrap, faCss3, faGit, faGithub, faHtml5, faJava, faJs, faNode, fa
 
 export const TecnologiesSection = () => {
     return (
-        <section className="skills section-50vh" id="tecnologies">
+        <section className="skills section-50vh  menu-section" id="tecnologies">
             <div className="skills__datos container">
                 <h2 className="sobre__title2  text-strong-color">Tecnologías</h2>
                 <div className="skills__list">

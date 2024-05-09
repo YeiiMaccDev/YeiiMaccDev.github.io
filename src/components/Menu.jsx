@@ -13,7 +13,8 @@ export const Menu = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const sections = document.querySelectorAll("section");
+            const sections = document.querySelectorAll(".menu-section");
+            console.log(sections)
             const menuItems = document.querySelectorAll("nav ul li a");
 
             sections.forEach((seccion, index) => {

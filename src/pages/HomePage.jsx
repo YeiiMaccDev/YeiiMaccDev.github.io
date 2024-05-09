@@ -13,6 +13,8 @@ export const HomePage = () => {
             <AboutSection />
             <AboutMeSection />
             <TecnologiesSection />
+            <section className=" menu-section" style={{ minHeight: '100vh' }} id="proyectos"> proyectos </section>
+            <section style={{ minHeight: '100vh' }} id="proyectos"> proyectos </section>
             <section style={{ minHeight: '100vh' }} id="proyectos"> proyectos </section>
             <AcademicSection />
             <AcademicDescriptionSection />

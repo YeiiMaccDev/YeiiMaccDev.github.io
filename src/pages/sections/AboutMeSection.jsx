@@ -3,7 +3,7 @@ import profileImg2 from '../../assets/img/perfil2.png'
 
 export const AboutMeSection = () => {
     return (
-        <section className="about-me section-100vh" id="aboutme">
+        <section className="about-me section-100vh menu-section" id="aboutme">
             <div className="about-me__data container">
                 <div className="about-me__avatar">
                     <img className="about-me__img" src={profileImg2} alt="" />

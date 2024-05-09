@@ -43,7 +43,7 @@ export const ContactSection = () => {
                         <button
                             className="contact__btnWhatsapp btn contact__icons-link"
                             onClick={toggleWhatsapp}>
-                            <strong>Ver contact</strong>
+                            <strong>Ver contacto</strong>
                         </button>
                     </div>
 

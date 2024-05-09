@@ -6,7 +6,7 @@ import logoFUC from '../../assets/img/academic/logoFUC.png'
 
 export const AcademicSection = () => {
     return (
-        <section className="academic section-100vh" id="academic">
+        <section className="academic section-100vh  menu-section" id="academic">
             <div className="academic__data container">
                 <h2 className="academic__title">Formación académica</h2>
                 <div className="academic__list">
