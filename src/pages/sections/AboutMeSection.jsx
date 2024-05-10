@@ -33,7 +33,7 @@ export const AboutMeSection = () => {
                     </p>
 
                     <div className="about-me__btns">
-                        <a className="btn about-me__btn-contact" href="#contacto" role="button"> Contáctame </a>
+                        <a className="btn about-me__btn-contact" href="#contact" role="button"> Contáctame </a>
                     </div>
                 </div>
             </div>

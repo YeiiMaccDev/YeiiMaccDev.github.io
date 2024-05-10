@@ -1,0 +1,38 @@
+.work-history {
+    background: var(--bg-primary-color);
+}
+
+.work-history__data {
+    display: flex;
+    align-items: center;
+}
+
+.work-history__card {
+    color: var(--font-color);
+    padding: 1rem;
+
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+}
+
+.work-history__item {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem 2rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+
+.work-history__item-description {
+    padding: .5rem 1rem;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .work-history__item {
+        padding: .5rem;
+    }
+}

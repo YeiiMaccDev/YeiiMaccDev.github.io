@@ -14,7 +14,6 @@ export const Menu = () => {
     useEffect(() => {
         const handleScroll = () => {
             const sections = document.querySelectorAll(".menu-section");
-            console.log(sections)
             const menuItems = document.querySelectorAll("nav ul li a");
 
             sections.forEach((seccion, index) => {
@@ -57,7 +56,7 @@ export const Menu = () => {
                         <a className="navbar-site__link" href="#tecnologies">Tecnologías</a>
                     </li>
                     <li className="navbar-site__item">
-                        <a className="navbar-site__link" href="#proyectos">Proyectos</a>
+                        <a className="navbar-site__link" href="#workHistory">Experiencia</a>
                     </li>
                     <li className="navbar-site__item">
                         <a className="navbar-site__link" href="#academic">Formación</a>
