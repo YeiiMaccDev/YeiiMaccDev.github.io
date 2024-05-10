@@ -96,7 +96,7 @@
 }
 
 @media screen and (max-width: 900px) {
-    .contact__lista {
+    .contact__list {
         grid-template-columns: 1fr;
     }
 }

@@ -109,3 +109,10 @@
 .projects__menu-item:last-child {
     margin-right: 0;
 }
+
+
+@media screen and (max-width: 600px) {
+    .projects__list {
+        grid-template-columns: 1fr;
+    }
+}
