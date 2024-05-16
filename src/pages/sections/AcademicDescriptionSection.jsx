@@ -6,6 +6,7 @@ import logoMisionT from '../../assets/img/academic/logo-misiontic.png'
 import logoONE from '../../assets/img/academic/logo-one-alura.png'
 import logoFUC from '../../assets/img/academic/logoFUC.png'
 
+import logoSM from '../../assets/img/academic/logoScrum.jpg'
 import logoOracle from '../../assets/img/academic/logoOracle.jpg'
 import logoCisco from '../../assets/img/academic/logoCisco.jpg'
 import logoConectaE from '../../assets/img/academic/logoConectaE.jpg'
@@ -74,6 +75,15 @@ export const AcademicDescriptionSection = () => {
 
                 <div className="academic-description__card">
                     <h2 className="about__title2">Licencias y certificaciones</h2>
+                    <div className="academic-description__item">
+                        <div className="academic-description__item-image">
+                            <img src={logoSM} width={70} height={60} alt="" />
+                        </div>
+                        <div className="academic-description_item-description">
+                            <p><strong>SCRUMstudy</strong></p>
+                            <p>Scrum Fundamentals Certified (SFC)</p>
+                        </div>
+                    </div>
 
                     <div className="academic-description__item">
                         <div className="academic-description__item-image">
