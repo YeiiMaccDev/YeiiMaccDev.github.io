@@ -59,8 +59,8 @@
 }
 
 .contact__whatsapp {
-    display: none;
-    transition: var(--transition);
+    visibility: hidden;
+    transition: all 0.1s ease;
 }
 
 .contact__email-text,
