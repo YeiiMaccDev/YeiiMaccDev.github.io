@@ -45,9 +45,9 @@
 }
 
 .about__avatar {
-  width: 300px;
+  width: 400px;
   height: auto;
-  aspect-ratio: 1/1.5;
+  aspect-ratio: 1/1;
   margin: auto;
   box-shadow: var(--box-shadow-profile);
   transition: var(--transition);
@@ -176,14 +176,14 @@
 
 @media screen and (max-width: 500px) {
   .about__avatar {
-    width: 250px;
+    width: 300px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .about__avatar {
-    width: 250px;
+    width: 300px;
   }
 }
 
-/* Abuot Section */
+/* About Section */

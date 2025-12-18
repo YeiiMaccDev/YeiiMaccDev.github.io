@@ -30,7 +30,7 @@ export const AcademicSection = () => {
                         <img src={logoFUC} className="academic__img academic__misiontic"
                             alt="" />
                         <div className="academic__descripcion">
-                            <strong className="academic__icons__dates academic__actual">2022 - Actual ( 7 semestre )</strong>
+                            <strong className="academic__icons__dates academic__actual">2022 - 2026</strong>
                         </div>
                     </div>
                     <div className="academic__card">

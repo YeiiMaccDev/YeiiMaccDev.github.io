@@ -2,7 +2,7 @@ import { faArrowDown, faFilePdf } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons"
 
-import profileImg from "../../assets/img/perfil.jpg"
+import profileImg from "../../assets/img/perfil.png"
 import './AboutSection.css'
 
 export const AboutSection = () => {
@@ -13,8 +13,8 @@ export const AboutSection = () => {
                     <h1 className="about__title"> Yeison Macias </h1>
                     <h2 className="about__title2 text-strong-color"> FullStack JavaScript Developer </h2>
                     <p className="about__description">
-                        Hola, soy Yeison Macias <strong> YeiiMaccDev </strong> con <strong> +1
-                            año de experiencia </strong>, me encanta el mundo del desarrollo web, desliza hacia abajo y
+                        Hola, soy Yeison Macias <strong> YeiiMaccDev </strong> con <strong> +3
+                            años de experiencia </strong>, me encanta el mundo del desarrollo web, desliza hacia abajo y
                         descubre un poco mas sobre mi.
                     </p>
                     <div className="about__networks">
