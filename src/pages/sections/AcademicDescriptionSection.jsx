@@ -13,123 +13,141 @@ import logoConectaE from '../../assets/img/academic/logoConectaE.jpg'
 import logoAlura from '../../assets/img/academic/logoAlura.jpg'
 
 export const AcademicDescriptionSection = () => {
-    return (
-        <section className="academic-description section-100vh" id="aboutme">
-            <div className="academic-description__data container">
-                <div className="academic-description__card">
-                    <h2 className="about__title2">Educación</h2>
+    const EDUCATION_DATA = [
+        {
+            id: 'fuc-spec',
+            logo: logoFUC,
+            institution: 'Fundación Universitaria Compensar',
+            title: 'Especialista en Big Data',
+            date: '2026 - 2027 En curso',
+        },
+        {
+            id: 'fuc-ing',
+            logo: logoFUC,
+            institution: 'Fundación Universitaria Compensar',
+            title: 'Ingeniería de Sistemas',
+            date: '2022 - 2026',
+        },
+        {
+            id: 'one-diploma',
+            logo: logoONE,
+            institution: 'Oracle Next Education - Alura',
+            title: 'Diplomado Desarrollo Web / Cloud Infrastructure',
+            date: '2022 - 2023',
+        },
+        {
+            id: 'misiontic',
+            logo: logoMisionT,
+            institution: 'Misión TIC 2022',
+            title: 'Diplomado Desarrollo de Software',
+            date: '2021 - 2022',
+        },
+        {
+            id: 'sena-adsi',
+            logo: logoSena,
+            institution: 'Servicio Nacional de Aprendizaje (SENA)',
+            title: 'Tecnólogo en Análisis y Desarrollo de Sistemas de Información',
+            date: '2019 - 2021',
+        },
+        {
+            id: 'sena-tech',
+            logo: logoSena,
+            institution: 'Servicio Nacional de Aprendizaje (SENA)',
+            title: 'Técnico de Sistemas - Bachiller',
+            date: '2017 - 2018',
+        },
+    ];
 
-                    <div className="academic-description__item">
-                        <div className="academic-description__item-image">
-                            <img src={logoFUC} width={70} height={60} alt="" />
-                        </div>
-                        <div className="academic-description_item-description">
-                            <p><strong>Fundacion UniversitariaCompensar</strong></p>
-                            <p>Ingenieria en sistemas</p>
-                            <p>2022 - Actual ( 7 semestre )</p>
-                        </div>
-                    </div>
+    const CERTIFICATION_DATA = [
+        {
+            id: 'scrum',
+            logo: logoSM,
+            institution: 'SCRUMstudy',
+            details: ['Scrum Fundamentals Certified (SFC)'],
+        },
+        {
+            id: 'conecta-bi',
+            logo: logoConectaE,
+            institution: 'Conecta Empleo',
+            details: ['Introducción a Power BI - FT Ed 3'],
+        },
+        {
+            id: 'cisco-sec',
+            logo: logoCisco,
+            institution: 'Cisco',
+            details: ['Introduction to Cybersecurity'],
+        },
+        {
+            id: 'oracle-db',
+            logo: logoOracle,
+            institution: 'Oracle',
+            details: [
+                'Certified Database Design',
+                'Certified Database Foundations'
+            ],
+        },
+        {
+            id: 'alura-path',
+            logo: logoAlura,
+            institution: 'Alura Latam - Oracle ONE',
+            details: [
+                'Formación Java Orientado a Objetos G3',
+                'Formación Front End G3',
+                'Git y GitHub: controle y comparta su código',
+                'SQL con MYSQL SERVER de ORACLE',
+                'Formación Oracle Cloud Infrastructure',
+            ],
+        }];
 
-                    <div className="academic-description__item">
-                        <div className="academic-description__item-image">
-                            <img src={logoONE} width={70} height={60} alt="" />
-                        </div>
-                        <div className="academic-description_item-description">
-                            <p><strong>Oracle Next Education - Alura</strong></p>
-                            <p>Diplomado</p>
-                            <p>2022 - 2023</p>
-                        </div>
-                    </div>
-
-                    <div className="academic-description__item">
-                        <div className="academic-description__item-image">
-                            <img src={logoMisionT} width={70} height={60} alt="" />
-                        </div>
-                        <div className="academic-description_item-description">
-                            <p><strong>MisionTic 2022</strong></p>
-                            <p>Diplomado</p>
-                            <p>2021 - 2022 </p>
-                        </div>
-                    </div>
-                    <div className="academic-description__item">
-                        <div className="academic-description__item-image">
-                            <img src={logoSena} width={70} height={60} alt="" />
-                        </div>
-                        <div className="academic-description_item-description">
-                            <p><strong>Servicio Nacional de Aprendizaje</strong></p>
-                            <p>Tecnólogo en análisis y Desarrollo de sistemas de información</p>
-                            <p>2019 - 2021 </p>
-                        </div>
-                    </div>
-                    <div className="academic-description__item">
-                        <div className="academic-description__item-image">
-                            <img src={logoSena} width={70} height={60} alt="" />
-                        </div>
-                        <div className="academic-description_item-description">
-                            <p><strong>Servicio Nacional de Aprendizaje</strong></p>
-                            <p>Técnico de sistemas - Bachiller </p>
-                            <p>2017 - 2018 </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="academic-description__card">
-                    <h2 className="about__title2">Licencias y certificaciones</h2>
-                    <div className="academic-description__item">
-                        <div className="academic-description__item-image">
-                            <img src={logoSM} width={70} height={60} alt="" />
-                        </div>
-                        <div className="academic-description_item-description">
-                            <p><strong>SCRUMstudy</strong></p>
-                            <p>Scrum Fundamentals Certified (SFC)</p>
-                        </div>
-                    </div>
-
-                    <div className="academic-description__item">
-                        <div className="academic-description__item-image">
-                            <img src={logoOracle} width={70} height={60} alt="" />
-                        </div>
-                        <div className="academic-description_item-description">
-                            <p><strong>Oracle</strong></p>
-                            <p>Certified Database Design</p>
-                            <p>Certified Database Foundations</p>
-                        </div>
-                    </div>
-
-                    <div className="academic-description__item">
-                        <div className="academic-description__item-image">
-                            <img src={logoCisco} width={70} height={60} alt="" />
-                        </div>
-                        <div className="academic-description_item-description">
-                            <p><strong>Cisco</strong></p>
-                            <p>Introduction to Cybersecurity</p>
-                        </div>
-                    </div>
-                    <div className="academic-description__item">
-                        <div className="academic-description__item-image">
-                            <img src={logoConectaE} width={70} height={60} alt="" />
-                        </div>
-                        <div className="academic-description_item-description">
-                            <p><strong>Conecta Empleo</strong></p>
-                            <p>Introducción a Power BI - FT Ed 3</p>
-                        </div>
-                    </div>
-                    <div className="academic-description__item">
-                        <div className="academic-description__item-image">
-                            <img src={logoAlura} width={70} height={60} alt="" />
-                        </div>
-                        <div className="academic-description_item-description">
-                            <p><strong>Alura Latan - Oracle ONE</strong></p>
-                            <p>Formación Principiante en Programación G3 </p>
-                            <p>Formación Java Orientado a Objetos G3 </p>
-                            <p>Formación Front End G3 </p>
-                            <p>Git y GitHub: controle y comparta su código</p>
-                            <p>SQL con MYSQL SERVER de ORACLE </p>
-                            <p>Formación Oracle Cloud Infrastructure </p>
-                        </div>
-                    </div>
-                </div>
+    const AcademicItem = ({ logo, institution, title, date, details }) => (
+        <div className="academic-description__item">
+            <div className="academic-description__item-image">
+                <img src={logo} alt={`Logo de ${institution}`} loading="lazy" />
             </div>
-        </section>
+            <div className="academic-description_item-description">
+                {title && <p><strong>{title}</strong></p>}
+                <p>{institution}</p>
+                {details ? (
+                    details.map((detail, index) => <p key={index} className="text-sm">{detail}</p>)
+                ) : (
+                    <p>{date}</p>
+                )}
+            </div>
+        </div>
+    );
+
+    return (
+        <>
+            <section className="academic-description" id="aboutme">
+                <div className="academic-description__data container">
+
+                    <div className="academic-description__card">
+                        <h2 className="about__title2">Educación</h2>
+                        <div className="academic-list">
+                            {EDUCATION_DATA.map((item) => (
+                                <AcademicItem
+                                    key={item.id}
+                                    {...item}
+                                />
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="academic-description__card">
+                        <h2 className="about__title2">Licencias y certificaciones</h2>
+                        <div className="academic-list">
+                            {CERTIFICATION_DATA.map((item) => (
+                                <AcademicItem
+                                    key={item.id}
+                                    {...item}
+                                />
+                            ))}
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </>
+
     )
 }

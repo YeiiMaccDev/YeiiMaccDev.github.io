@@ -1,83 +1,207 @@
 
 import './ProjectSection.css'
 
-import projectLT from '../../assets/img/proyects/LTC1.png'
-import projectMS from '../../assets/img/proyects/MS1.png'
-import projectSP1 from '../../assets/img/proyects/SP1.png'
-import projectECO from '../../assets/img/proyects/ECO1.png'
+import projectLT1 from '../../assets/img/proyects/LTC1.png'
+import projectLT2 from '../../assets/img/proyects/LTC2.png'
+import projectLT3 from '../../assets/img/proyects/LTC3.png'
+import projectLT4 from '../../assets/img/proyects/LTC4.png'
+import projectLT5 from '../../assets/img/proyects/LTC5.png'
+import projectLT6 from '../../assets/img/proyects/LTC6.png'
 
-const poyects = [
+import projectMS1 from '../../assets/img/proyects/MS1.png'
+import projectMS2 from '../../assets/img/proyects/MS2.png'
+import projectMS3 from '../../assets/img/proyects/MS3.png'
+import projectMS4 from '../../assets/img/proyects/MS4.png'
+import projectMS5 from '../../assets/img/proyects/MS5.png'
+import projectMS6 from '../../assets/img/proyects/MS6.png'
+
+import projectSP1 from '../../assets/img/proyects/SP1.png'
+import projectSP2 from '../../assets/img/proyects/SP2.png'
+import projectSP3 from '../../assets/img/proyects/SP3.png'
+import projectSP4 from '../../assets/img/proyects/SP4.png'
+import projectSP5 from '../../assets/img/proyects/SP5.png'
+import projectSP6 from '../../assets/img/proyects/SP6.png'
+
+import projectECO1 from '../../assets/img/proyects/ECO1.png'
+import projectECO2 from '../../assets/img/proyects/ECO2.png'
+import projectECO3 from '../../assets/img/proyects/ECO3.png'
+import projectECO4 from '../../assets/img/proyects/ECO4.png'
+import projectECO5 from '../../assets/img/proyects/ECO5.png'
+import projectECO6 from '../../assets/img/proyects/ECO6.png'
+
+import { useState } from 'react'
+
+// --- DATA ---
+const PROJECTS_DATA = [
     {
+        id: 1,
         title: 'Lifetime Capital - Financial Group',
-        images: [projectLT],
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        tecnologies: ['HTML', 'CSS', 'React.js', 'Bootstrap'],
+        category: 'Front-end',
+        images: [
+            projectLT1,
+            projectLT2,
+            projectLT4,
+            projectLT5,
+            projectLT6
+        ],
+        description: 'Plataforma corporativa para un grupo financiero con enfoque en gestión patrimonial y visualización de datos de inversión.',
+        technologies: ['HTML', 'CSS', 'React.js', 'Bootstrap'],
         demo: 'https://lifetimecapital.com',
         github: 'https://github.com/joswald123/Lifetimews'
     },
     {
+        id: 2,
         title: 'Moda Sport',
-        images: [projectMS],
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        tecnologies: ['HTML', 'CSS', 'Bootstrap', 'React.js', 'Node.js',],
-        demo: 'yeiimaccdev.github.io/ModaSport/',
+        category: 'Back-end',
+        images: [
+            projectMS1,
+            projectMS2,
+            projectMS3,
+            projectMS4,
+            projectMS5,
+            projectMS6
+        ],
+        description: 'Sistema de gestión de inventarios y API para e-commerce de ropa deportiva. Incluye pasarela de pago y manejo de usuarios.',
+        technologies: ['Node.js', 'Express', 'MongoDB', 'React.js'],
+        demo: 'https://yeiimaccdev.github.io/ModaSport/',
         github: 'https://github.com/YeiiMaccDev/ModaSport'
     },
     {
+        id: 3,
         title: 'ShoesPlay',
-        images: [projectSP1],
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        tecnologies: ['HTML', 'CSS', 'Material UI', 'React.js', 'Node.js',],
-        demo: 'yeiimaccdev.github.io/ModaSport/',
+        category: 'Front-end',
+        images: [
+            projectSP1,
+            projectSP2,
+            projectSP3,
+            projectSP4,
+            projectSP5,
+            projectSP6
+        ],
+        description: 'Tienda virtual de calzado enfocada en una interfaz de usuario fluida utilizando Material UI.',
+        technologies: ['React.js', 'Material UI', 'Redux'],
+        demo: 'https://yeiimaccdev.github.io/ModaSport/',
         github: 'https://github.com/YeiiMaccDev/ShoesPlay'
     },
     {
-        title: 'Tecno',
-        images: [projectECO],
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        tecnologies: ['HTML', 'CSS', 'React.js', 'Node.js',],
-        demo: 'yeiimaccdev.github.io/E-commerce_Js/',
-        github: 'https://yeiimaccdev.github.io/E-commerce_Js/'
+        id: 4,
+        title: 'Tecno E-commerce',
+        category: 'Front-end',
+        images: [
+            projectECO1,
+            projectECO2,
+            projectECO3,
+            projectECO4,
+            projectECO5,
+            projectECO6
+        ],
+        description: 'Catálogo de productos tecnológicos con filtrado avanzado y carrito de compras dinámico.',
+        technologies: ['JavaScript', 'HTML', 'CSS'],
+        demo: 'https://yeiimaccdev.github.io/E-commerce_Js/',
+        github: 'https://github.com/yeiimaccdev/E-commerce_Js'
     }
-]
+];
+
+
+const Modal = ({ project, onClose }) => {
+    const [currentImg, setCurrentImg] = useState(0);
+
+    if (!project) return null;
+
+    const nextImg = () => setCurrentImg((prev) => (prev + 1) % project.images.length);
+    const prevImg = () => setCurrentImg((prev) => (prev - 1 + project.images.length) % project.images.length);
+
+    return (
+        <div className="modal-overlay" onClick={onClose}>
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                <button className="modal-close" onClick={onClose}>✕</button>
+
+                <div className="carousel">
+                    <img src={project.images[currentImg]} alt={`${project.title} screenshot`} />
+                    {project.images.length > 1 && (
+                        <>
+                            <button className="carousel-btn carousel-btn-prev" onClick={prevImg}>‹</button>
+                            <button className="carousel-btn carousel-btn-next" onClick={nextImg}>›</button>
+                        </>
+                    )}
+                </div>
+
+                <div className="modal-body">
+                    <h2 className="about__title2">{project.title}</h2>
+                    <div className="modal-tags">
+                        {project.technologies.map(tech => <span key={tech} className="tag">{tech}</span>)}
+                    </div>
+                    <p style={{ lineHeight: 1.6, opacity: 0.9 }}>{project.description}</p>
+
+                    <div className="modal-actions">
+                        <a href={project.demo} target="_blank" rel="noreferrer" className="btn-link btn-primary">Ver Demo</a>
+                        <a href={project.github} target="_blank" rel="noreferrer" className="btn-link btn-outline">Repositorio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
 
 export const ProjectSection = () => {
 
+    const [filter, setFilter] = useState('Todos');
+    const [selectedProject, setSelectedProject] = useState(null);
+
+    const filteredProjects = filter === 'Todos'
+        ? PROJECTS_DATA
+        : PROJECTS_DATA.filter(p => p.category === filter);
+
     return (
-        <section className="projects section-100vh" id="workHistory">
-            <div className="projects__data container">
-                <div className="projects__card">
-                    <h2 className="about__title2">Proyectos</h2>
+        <>
+            <section className="projects" id="workHistory">
+                <div className="container">
+                    <div className="projects__card">
+                        <h2 className="about__title2">Proyectos</h2>
 
-                    <nav className="projects__menu">
-                        <ul className='projects__menu-list'>
-                            <li className='projects__menu-item projects__menu-item-active'>Todos</li>
-                            <li className='projects__menu-item'>Front-end</li>
-                            <li className='projects__menu-item'>Back-end</li>
-                        </ul>
-                    </nav>
+                        <nav className="projects__menu">
+                            <ul className='projects__menu-list'>
+                                {['Todos', 'Front-end', 'Back-end'].map(cat => (
+                                    <li
+                                        key={cat}
+                                        className={`projects__menu-item ${filter === cat ? 'projects__menu-item-active' : ''}`}
+                                        onClick={() => setFilter(cat)}
+                                    >
+                                        {cat}
+                                    </li>
+                                ))}
+                            </ul>
+                        </nav>
 
-                    <div className="projects__list">
-
-                        {
-                            poyects.map(({ title, images }) => (
-                                <div className="projects__item" key={title}>
+                        <div className="projects__list">
+                            {filteredProjects.map((project) => (
+                                <div
+                                    className="projects__item"
+                                    key={project.id}
+                                    onClick={() => setSelectedProject(project)}
+                                >
                                     <div className="projects__item-img">
-                                        <img src={images[0]} />
+                                        <img src={project.images[0]} alt={project.title} />
                                     </div>
-                                    <hr />
                                     <div className="projects__item-description">
-                                        <p><strong>{title}</strong></p>
+                                        <p><strong>{project.title}</strong></p>
+                                        <span style={{ fontSize: '0.8rem', opacity: 0.6 }}>{project.category}</span>
                                     </div>
                                 </div>
-                            ))
-                        }
-
+                            ))}
+                        </div>
                     </div>
-
                 </div>
+            </section>
 
-            </div>
-        </section>
-    )
+            {/* Modal */}
+            {selectedProject && (
+                <Modal
+                    project={selectedProject}
+                    onClose={() => setSelectedProject(null)}
+                />
+            )}
+        </>
+    );
 }
