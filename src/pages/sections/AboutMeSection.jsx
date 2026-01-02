@@ -1,5 +1,5 @@
 import './AboutMeSection.css'
-import profileImg2 from '../../assets/img/perfil2.png'
+import profileImg2 from '../../assets/img/perfil2.webp'
 
 export const AboutMeSection = () => {
     return (

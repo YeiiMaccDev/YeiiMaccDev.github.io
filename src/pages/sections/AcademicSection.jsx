@@ -1,8 +1,8 @@
 import './AcademicSection.css'
 
-import logoSena from '../../assets/img/academic/logo-sena.png'
-import logoONE from '../../assets/img/academic/logo-one-alura.png'
-import logoFUC from '../../assets/img/academic/logoFUC.png'
+import logoSena from '../../assets/img/academic/logo-sena.webp'
+import logoONE from '../../assets/img/academic/logo-one-alura.webp'
+import logoFUC from '../../assets/img/academic/logoFUC.webp'
 
 export const AcademicSection = () => {
     return (

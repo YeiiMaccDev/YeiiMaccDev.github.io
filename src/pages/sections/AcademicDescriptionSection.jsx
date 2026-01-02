@@ -1,16 +1,16 @@
 
 import "./AcademicDescriptionSection.css"
 
-import logoSena from '../../assets/img/academic/logo-sena.png'
-import logoMisionT from '../../assets/img/academic/logo-misiontic.png'
-import logoONE from '../../assets/img/academic/logo-one-alura.png'
-import logoFUC from '../../assets/img/academic/logoFUC.png'
+import logoSena from '../../assets/img/academic/logo-sena.webp'
+import logoMisionT from '../../assets/img/academic/logo-misiontic.webp'
+import logoONE from '../../assets/img/academic/logo-one-alura.webp'
+import logoFUC from '../../assets/img/academic/logoFUC.webp'
 
-import logoSM from '../../assets/img/academic/logoScrum.jpg'
-import logoOracle from '../../assets/img/academic/logoOracle.jpg'
-import logoCisco from '../../assets/img/academic/logoCisco.jpg'
-import logoConectaE from '../../assets/img/academic/logoConectaE.jpg'
-import logoAlura from '../../assets/img/academic/logoAlura.jpg'
+import logoSM from '../../assets/img/academic/logoScrum.webp'
+import logoOracle from '../../assets/img/academic/logoOracle.webp'
+import logoCisco from '../../assets/img/academic/logoCisco.webp'
+import logoConectaE from '../../assets/img/academic/logoConectaE.webp'
+import logoAlura from '../../assets/img/academic/logoAlura.webp'
 
 export const AcademicDescriptionSection = () => {
     const EDUCATION_DATA = [

@@ -1,9 +1,9 @@
 import { useThemeContext } from "../context/ThemeProvider"
 
-import logoDark60 from '../assets/img/logoDark60.png'
-import logoDark120 from '../assets/img/logoDark120.png'
-import logoLight60 from '../assets/img/logoLight60.png'
-import logoLight120 from '../assets/img/logoLight120.png'
+import logoDark60 from '../assets/img/logoDark60.webp'
+import logoDark120 from '../assets/img/logoDark120.webp'
+import logoLight60 from '../assets/img/logoLight60.webp'
+import logoLight120 from '../assets/img/logoLight120.webp'
 
 export const MenuLogo = () => {
     console.log("MenuLogo")

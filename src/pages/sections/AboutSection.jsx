@@ -2,7 +2,7 @@ import { faArrowDown, faFilePdf } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons"
 
-import profileImg from "../../assets/img/perfil.png"
+import profileImg from "../../assets/img/perfil.webp"
 import './AboutSection.css'
 
 export const AboutSection = () => {
